@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding: 50px 0px;
 }
 
 .canvas {
@@ -19,14 +19,50 @@ body {
 }
 
 .controls {
-  margin-top: 50px;
-}
-.controls .controls__color {
+  margin: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.controls__color .controls__color {
-  width: 50px;
-  height: 50px;
+.controls .controls__btns {
+  margin-bottom: 70px;
+}
+
+.controls__btn button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  margin: 0px 6px;
+  padding: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.controls__btn button:active {
+  transform: scale(0.98);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+.controls__colors .controls__color {
+  width: 70px;
+  height: 70px;
+  margin: 30px 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
 }
